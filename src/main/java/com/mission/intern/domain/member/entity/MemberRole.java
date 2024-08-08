@@ -1,9 +1,7 @@
 package com.mission.intern.domain.member.entity;
 
 
-import com.mission.intern.domain.member.vo.RoleType;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
