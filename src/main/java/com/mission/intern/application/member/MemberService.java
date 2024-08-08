@@ -10,6 +10,7 @@ import com.mission.intern.presentation.member.dto.request.RegisterRequest;
 import com.mission.intern.presentation.member.dto.response.RegisteredMemberInfo;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -18,6 +19,7 @@ public class MemberService {
 
     private final MemberRepository memberRepository;
     private final RoleRepository roleRepository;
+    private final PasswordEncoder passwordEncoder;
 
     @Transactional
     public RegisteredMemberInfo register(RegisterRequest request) {
@@ -25,6 +27,7 @@ public class MemberService {
         Role role = getRole(request.role());
         MemberRole memberRole = new MemberRole(role);
 
+        member.setPassword(passwordEncoder.encode(request.password()));
         member.setRole(memberRole);
 
         return RegisteredMemberInfo.from(member);

@@ -38,6 +38,10 @@ public class Member {
         memberRole.setMember(this);
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public Set<RoleType> getAuthorities() {
         return roles.stream()
                 .map(MemberRole::getRole)
