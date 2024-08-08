@@ -1,4 +1,4 @@
-package com.mission.intern.presentation;
+package com.mission.intern.presentation.member;
 
 import com.mission.intern.application.member.MemberService;
 import com.mission.intern.presentation.member.dto.request.RegisterRequest;
