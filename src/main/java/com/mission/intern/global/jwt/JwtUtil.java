@@ -18,7 +18,7 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.Arrays;
 import java.util.Date;
-import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -43,10 +43,10 @@ public class JwtUtil implements InitializingBean {
         return TokenResponse.from(accessToken);
     }
 
-    public List<SimpleGrantedAuthority> getAuthorities(Claims claims) {
+    public Set<SimpleGrantedAuthority> getAuthorities(Claims claims) {
         return Arrays.stream(claims.get("auth").toString().split(","))
                 .map(SimpleGrantedAuthority::new)
-                .toList();
+                .collect(Collectors.toSet());
     }
 
     public boolean validateToken(String accessToken) {

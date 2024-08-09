@@ -18,7 +18,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
-import java.util.List;
+import java.util.Set;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -34,7 +34,7 @@ public class AuthenticateFilter extends OncePerRequestFilter {
         if (jwtUtil.validateToken(accessToken)) {
             Claims claims = jwtUtil.getClaims(accessToken);
             String username = claims.getSubject();
-            List<SimpleGrantedAuthority> authorities = jwtUtil.getAuthorities(claims);
+            Set<SimpleGrantedAuthority> authorities = jwtUtil.getAuthorities(claims);
             UserDetails principal = userDetailService.loadUserByUsername(username);
             Authentication authentication = new UsernamePasswordAuthenticationToken(principal, "", authorities);
 
