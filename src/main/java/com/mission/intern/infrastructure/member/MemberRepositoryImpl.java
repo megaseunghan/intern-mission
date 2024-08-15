@@ -1,7 +1,7 @@
 package com.mission.intern.infrastructure.member;
 
-import com.mission.intern.domain.member.entity.Member;
-import com.mission.intern.domain.member.repository.MemberRepository;
+import com.mission.intern.member.domain.entity.Member;
+import com.mission.intern.member.domain.repository.MemberRepository;
 import com.mission.intern.infrastructure.member.hibernate.MemberJpaRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;

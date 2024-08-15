@@ -1,6 +1,6 @@
-package com.mission.intern.domain.member.entity;
+package com.mission.intern.member.domain.entity;
 
-import com.mission.intern.domain.member.vo.RoleType;
+import com.mission.intern.member.domain.vo.RoleType;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;

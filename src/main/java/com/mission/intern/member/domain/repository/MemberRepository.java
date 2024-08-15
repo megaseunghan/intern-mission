@@ -1,6 +1,6 @@
-package com.mission.intern.domain.member.repository;
+package com.mission.intern.member.domain.repository;
 
-import com.mission.intern.domain.member.entity.Member;
+import com.mission.intern.member.domain.entity.Member;
 
 import java.util.Optional;
 
