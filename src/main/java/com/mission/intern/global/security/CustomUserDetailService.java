@@ -1,8 +1,8 @@
 package com.mission.intern.global.security;
 
-import com.mission.intern.domain.member.entity.Member;
-import com.mission.intern.domain.member.entity.MemberRole;
-import com.mission.intern.domain.member.repository.MemberRepository;
+import com.mission.intern.member.domain.entity.Member;
+import com.mission.intern.member.domain.entity.MemberRole;
+import com.mission.intern.member.domain.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;

@@ -1,7 +1,7 @@
-package com.mission.intern.presentation.member.dto.response;
+package com.mission.intern.member.dto.response;
 
-import com.mission.intern.domain.member.entity.Member;
-import com.mission.intern.domain.member.vo.RoleType;
+import com.mission.intern.member.domain.entity.Member;
+import com.mission.intern.member.domain.vo.RoleType;
 import lombok.Builder;
 
 import java.util.Set;

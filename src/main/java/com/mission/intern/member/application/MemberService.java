@@ -1,16 +1,16 @@
-package com.mission.intern.application.member;
+package com.mission.intern.member.application;
 
-import com.mission.intern.domain.member.entity.Member;
-import com.mission.intern.domain.member.entity.MemberRole;
-import com.mission.intern.domain.member.entity.Role;
-import com.mission.intern.domain.member.repository.MemberRepository;
-import com.mission.intern.domain.member.repository.RoleRepository;
-import com.mission.intern.domain.member.vo.RoleType;
+import com.mission.intern.member.domain.entity.Member;
+import com.mission.intern.member.domain.entity.MemberRole;
+import com.mission.intern.member.domain.entity.Role;
+import com.mission.intern.member.domain.repository.MemberRepository;
+import com.mission.intern.member.domain.repository.RoleRepository;
+import com.mission.intern.member.domain.vo.RoleType;
 import com.mission.intern.global.jwt.JwtUtil;
-import com.mission.intern.presentation.member.dto.request.LoginRequest;
-import com.mission.intern.presentation.member.dto.request.RegisterRequest;
-import com.mission.intern.presentation.member.dto.response.RegisteredMemberInfo;
-import com.mission.intern.presentation.member.dto.response.TokenResponse;
+import com.mission.intern.member.dto.request.LoginRequest;
+import com.mission.intern.member.dto.request.RegisterRequest;
+import com.mission.intern.member.dto.response.RegisteredMemberInfo;
+import com.mission.intern.member.dto.response.TokenResponse;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

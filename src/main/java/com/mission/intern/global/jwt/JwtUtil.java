@@ -1,6 +1,6 @@
 package com.mission.intern.global.jwt;
 
-import com.mission.intern.presentation.member.dto.response.TokenResponse;
+import com.mission.intern.member.dto.response.TokenResponse;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
 import io.jsonwebtoken.security.SecurityException;

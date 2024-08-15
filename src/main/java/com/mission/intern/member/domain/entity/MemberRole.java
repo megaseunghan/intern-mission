@@ -1,4 +1,4 @@
-package com.mission.intern.domain.member.entity;
+package com.mission.intern.member.domain.entity;
 
 
 import jakarta.persistence.*;

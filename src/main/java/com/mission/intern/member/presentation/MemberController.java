@@ -1,10 +1,10 @@
-package com.mission.intern.presentation.member;
+package com.mission.intern.member.presentation;
 
-import com.mission.intern.application.member.MemberService;
-import com.mission.intern.presentation.member.dto.request.LoginRequest;
-import com.mission.intern.presentation.member.dto.request.RegisterRequest;
-import com.mission.intern.presentation.member.dto.response.RegisteredMemberInfo;
-import com.mission.intern.presentation.member.dto.response.TokenResponse;
+import com.mission.intern.member.application.MemberService;
+import com.mission.intern.member.dto.request.LoginRequest;
+import com.mission.intern.member.dto.request.RegisterRequest;
+import com.mission.intern.member.dto.response.RegisteredMemberInfo;
+import com.mission.intern.member.dto.response.TokenResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

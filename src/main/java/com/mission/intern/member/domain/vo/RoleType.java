@@ -1,4 +1,4 @@
-package com.mission.intern.domain.member.vo;
+package com.mission.intern.member.domain.vo;
 
 public enum RoleType {
     ROLE_USER, ROLE_ADMIN
