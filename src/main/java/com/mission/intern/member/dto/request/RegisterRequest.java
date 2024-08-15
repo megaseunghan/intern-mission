@@ -1,4 +1,4 @@
-package com.mission.intern.presentation.member.dto.request;
+package com.mission.intern.member.dto.request;
 
 import com.mission.intern.domain.member.entity.Member;
 import com.mission.intern.domain.member.vo.RoleType;

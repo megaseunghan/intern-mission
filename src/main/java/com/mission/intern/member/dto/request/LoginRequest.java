@@ -1,4 +1,4 @@
-package com.mission.intern.presentation.member.dto.request;
+package com.mission.intern.member.dto.request;
 
 public record LoginRequest(
         String username,

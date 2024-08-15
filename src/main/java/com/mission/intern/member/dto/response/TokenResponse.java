@@ -1,4 +1,4 @@
-package com.mission.intern.presentation.member.dto.response;
+package com.mission.intern.member.dto.response;
 
 import lombok.Builder;
 
