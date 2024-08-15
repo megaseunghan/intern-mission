@@ -1,4 +1,4 @@
-package com.mission.intern.application.member;
+package com.mission.intern.member.application;
 
 import com.mission.intern.domain.member.entity.Member;
 import com.mission.intern.domain.member.entity.MemberRole;

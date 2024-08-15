@@ -1,6 +1,6 @@
 package com.mission.intern.presentation.member;
 
-import com.mission.intern.application.member.MemberService;
+import com.mission.intern.member.application.MemberService;
 import com.mission.intern.presentation.member.dto.request.LoginRequest;
 import com.mission.intern.presentation.member.dto.request.RegisterRequest;
 import com.mission.intern.presentation.member.dto.response.RegisteredMemberInfo;
