@@ -1,4 +1,4 @@
-package com.mission.intern.infrastructure.member.hibernate;
+package com.mission.intern.member.infrastructure.hibernate;
 
 
 import com.mission.intern.member.domain.entity.Member;
